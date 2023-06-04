@@ -3,6 +3,8 @@
 *.d
 
 # Object files
+app
+vg*
 *.o
 *.ko
 *.obj
