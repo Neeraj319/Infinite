@@ -5,7 +5,7 @@ LDFLAGS=-g
 
 all: app
 
-OBJS=app.o parser.o
+OBJS=app.o parser.o vector.o
 
 
 app: $(OBJS)

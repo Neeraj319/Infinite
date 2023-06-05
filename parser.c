@@ -195,7 +195,10 @@ void run(char *file_contents) {
   scan_token(s);
   scan_token(s);
   scan_token(s);
-  printf("%c", s->tokens[0]->type);
+  scan_token(s);
+  scan_token(s);
+  scan_token(s);
+  printf("here %s", s->tokens[0]->lexeme);
 }
 
 void process_line(char *line) { printf("now processing line %s", line); }

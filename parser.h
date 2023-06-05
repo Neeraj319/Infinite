@@ -1,4 +1,5 @@
 #ifndef _STDIO_H
+#include "app.h"
 #include <stdio.h>
 #endif
 
@@ -60,11 +61,6 @@ typedef struct Token {
   char *lexeme;
   int line;
 } Token;
-
-typedef enum Boolean {
-  False,
-  True,
-} Boolean;
 
 Token *create_token(TokenType token_type, char *lexeme, int line);
 
